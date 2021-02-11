@@ -1,3 +1,3 @@
-## Web Portfolio
+# Web Portfolio
 
-# This project consists in my web portfolio
+## This repo contains my web portfolio

@@ -7,7 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/00075930ae.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header>
@@ -18,49 +19,86 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                        <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+                        <li class="nav__item"><a href="#works" class="nav__link">My Works</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        
+        <div id="fullpage">
+            <section class="section fp-section">
+                <div class="intro" id="home">
+                    <h1 class="section__title section__title--intro">Hi, I am <strong>José Lamarão</strong> </h1>
+                    <p class="section__subtitle section__subtitle--intro">Mobile Developer</p>
+                    <img src="img/joselamarao.png" alt="a image" class="intro__img">
+                </div>
+            </section>
+                
+            <section class="section" >
+                <div class="about" id="about">
+                    <h2 class="section__title section__title--about">WHO  I AM </h2>
+                    <p class="section__subtitle section__subtitle--about">asdasd</p>
+                    
+                    <div class="about-me__body">
+                        <p>Lorem ipsum </p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">Hi, I am <strong>José Lamarão</strong> </h1>
-            <p class="section__subtitle section__subtitle--intro">Mobile Developer</p>
-            <img src="img/joselamarao.png" alt="a image" class="intro__img">
-        </section>
-            
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">WHO  I AM </h2>
-            <p class="section__subtitle section__subtitle--about">asdasd</p>
-            
-            <div class="about-me__body">
-                <p>Lorem ipsum </p>
-            </div>
-        </section>
+            <section class="section">
+                <div class="works" id="works">
+                    <h2 class="section__title">My Works</21>
+                    <p class="section__subtitle section__subtitle--work">Some of my projects</p>
+                    
+                    <div class="portfolio">
+                        <a href="#" class="portfolio__item">
+                            <img src="img/portfolio_img1.jpg" alt="" class="portfolio__img">
+                        </a>
 
-        <section class="works" id="works">
-            <h2 class="section__title">Works</21>
-            <p class="section__subtitle"></p>
-            
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio_img1.png" alt="" class="portfolio__img">
-                </a>
+                        <a href="#" class="portfolio__item">
+                            <img src="img/portfolio_img2.png" alt="" class="portfolio__img">
+                        </a>
 
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio_img2.png" alt="" class="portfolio__img">
-                </a>
+                        <a href="#" class="portfolio__item">
+                            <img src="img/portfolio_img3.png" alt="" class="portfolio__img">
+                        </a>
 
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio_img3.png" alt="" class="portfolio__img">
-                </a>
+                        <a href="#" class="portfolio__item">
+                            <img src="img/portfolio_img4.png" alt="" class="portfolio__img">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="contact" id="contact"></div></section>
+        </div>
 
-                <a href="#" class="portfolio__item">
-                    <img src="portfolio_img4.png" alt="" class="portfolio__img">
-                </a>
-            </div>
-        </section>
+        <footer>
+            <a href="mailto:josee.nunoo@gmail.com" class="footer__link">josee.nunoo@gmail.com</a>
+            <ul class="social-list">
+                
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/joselamar">a</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/joselamarao">b</a></li>
+
+            </ul>
+        </footer>
+
+        <script type="text/javascript" src="js/fullpage.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            new fullpage('#fullpage', {
+	            //options here
+                autoScrolling: true,
+                scrollHorizontally: true,
+                responsiveWidth: '600px',
+                navigation:true,
+                navigationPosition: 'left',
+                fixedElements: '.header, .footer',
+                showActiveTooltip: true,
+                parallax: true,
+	            parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+            });
+        </script>
     </body>
 </html>

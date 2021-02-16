@@ -5,84 +5,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jose's Portfolio</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/00075930ae.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <header>
+        <div class="header">
             <div class="logo">
-                <img src="img/jl_logo.jpg" alt="">
+                <img src="img/jl_logo.jpg" class="logo__img" alt="logo">
                 <button class="nav-toggle" aria-label="toggle navigation"> <span class="hamburguer"></span></button>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                        <li class="nav__item"><a href="#works" class="nav__link">My Works</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
+        </div>
         
         <div id="fullpage">
-            <section class="section fp-section">
-                <div class="intro" id="home">
-                    <h1 class="section__title section__title--intro">Hi, I am <strong>José Lamarão</strong> </h1>
-                    <p class="section__subtitle section__subtitle--intro">Mobile Developer</p>
-                    <img src="img/joselamarao.png" alt="a image" class="intro__img">
+            <section class="section">
+                <div class="intro" id="home" >
+                    <div class="intro__title">
+                        <h1 class="section__title section__title--intro">Hi, I am <strong>José Lamarão</strong></h1>
+                        <p class="section__subtitle section__subtitle--intro">Mobile Software Developer</p>
+                        <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                       <div class="button__class">
+                            <a href="http://www.stackoverflow.com/"><button class="button__intro">Contact Me</button></a>
+                            <a href="Jose_Lamarao_CV_compressed.pdf"><button class="button__intro">Curriculum Vitae</button></a>
+                        </div> 
+                    </div>
+                    <div class="intro__img">
+                        <img src="img/app.png" alt="" >
+                    </div>
+                    <svg class="arrows">
+                        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                    </svg>
                 </div>
             </section>
-                
-            <section class="section" >
-                <div class="about" id="about">
-                    <h2 class="section__title section__title--about">WHO  I AM </h2>
-                    <p class="section__subtitle section__subtitle--about">asdasd</p>
-                    
+            
+            <section class="section">
+                <div class="about-me" id="about" >
+                    <h2 class="section__title section__title--about">Who am I</h2>
+                    <p class="section__subtitle section__subtitle--about"></p>
                     <div class="about-me__body">
-                        <p>Lorem ipsum </p>
-                    </div>
+                        <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div> 
+                    <img src="img/joselamarao.png" alt="IMAGE">  
                 </div>
             </section>
 
             <section class="section">
-                <div class="works" id="works">
-                    <h2 class="section__title">My Works</21>
+                <div class="works" id="work">
+                    <div>
+                    <h2 class="section__title section__title--portfolio">Portfolio</21>
                     <p class="section__subtitle section__subtitle--work">Some of my projects</p>
-                    
+                </div>
                     <div class="portfolio">
-                        <a href="#" class="portfolio__item">
-                            <img src="img/portfolio_img1.jpg" alt="" class="portfolio__img">
+                        <a href="#" class="portfolio__item" >
+                            <img src="img/2keypasswords.png" alt="" class="portfolio__img" >
                         </a>
 
                         <a href="#" class="portfolio__item">
-                            <img src="img/portfolio_img2.png" alt="" class="portfolio__img">
+                            <img src="img/hojabola.png" alt="" class="portfolio__img">
                         </a>
 
                         <a href="#" class="portfolio__item">
-                            <img src="img/portfolio_img3.png" alt="" class="portfolio__img">
-                        </a>
-
-                        <a href="#" class="portfolio__item">
-                            <img src="img/portfolio_img4.png" alt="" class="portfolio__img">
+                            <img src="img/portfolio_img3.jpg" alt="" class="portfolio__img">
                         </a>
                     </div>
                 </div>
             </section>
+
             <section class="section">
-                <div class="contact" id="contact"></div></section>
+                <div class="contact"></div>
+            </section>
+
         </div>
 
-        <footer>
+        <div class="footer">
             <a href="mailto:josee.nunoo@gmail.com" class="footer__link">josee.nunoo@gmail.com</a>
             <ul class="social-list">
-                
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com/joselamar">a</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/joselamarao">b</a></li>
-
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/joselamar"><i class="fab fa-github"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/joselamarao"><i class="fab fa-linkedin"></i></a></li>
             </ul>
-        </footer>
+        </div>
 
         <script type="text/javascript" src="js/fullpage.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -93,11 +108,9 @@
                 scrollHorizontally: true,
                 responsiveWidth: '600px',
                 navigation:true,
-                navigationPosition: 'left',
-                fixedElements: '.header, .footer',
+                navigationPosition: 'right',
                 showActiveTooltip: true,
-                parallax: true,
-	            parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+                fixedElements: '.header',
             });
         </script>
     </body>

@@ -1,3 +1,3 @@
 # Web Portfolio
 
- This repo contains my web portfolio hosted on [link](comingsoon)
+ This repo contains my web portfolio hosted on this [link](https://www.joselamarao.com)

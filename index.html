@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" >
     <head> 
+        <link rel="icon" href="img/jl_logo_background.jpg">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LH9GLDF282"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LH9GLDF282');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jose's Portfolio</title>
@@ -18,30 +26,30 @@
                 <img src="img/jl_logo.jpg" class="logo__img" alt="logo">
                 <button class="nav-toggle" aria-label="toggle navigation"> <span class="hamburguer"></span></button>
                 <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
+                    <ul class="nav__list" id="#menu">
+                        <li data-menuanchor="firstPage"><a href="#firstPage" class="active nav__link">Home</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage" class="nav__link">About me</a></li>
+                        <li data-menuanchor="thirdPage"><a href="#thirdPage" class="nav__link">Portfolio</a></li>
+                        <li data-menuanchor="fourthPage"><a href="#fourthPage" class="nav__link">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         
         <div id="fullpage">
-            <section class="section">
-                <div class="intro" id="home" >
+            <section class="section" id=home>
+                <div class="intro" >
                     <div class="intro__title">
                         <h1 class="section__title section__title--intro">Hi, I am <strong>José Lamarão</strong></h1>
                         <p class="section__subtitle section__subtitle--intro">Mobile Software Developer</p>
                         <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                        <div class="button__class">
-                            <a href="http://www.stackoverflow.com/"><button class="button__intro">Contact Me</button></a>
+                            <a href="#fourthPage"><button class="button__intro">Contact Me</button></a>
                             <a href="Jose_Lamarao_CV_compressed.pdf"><button class="button__intro">Curriculum Vitae</button></a>
                         </div> 
                     </div>
                     <div class="intro__img">
-                        <img src="img/app.png" alt="" >
+                        <img src="img/app.jpg" alt="" >
                     </div>
                     <svg class="arrows">
                         <path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -51,20 +59,24 @@
                 </div>
             </section>
             
-            <section class="section">
-                <div class="about-me" id="about" >
-                    <h2 class="section__title section__title--about">Who am I</h2>
-                    <p class="section__subtitle section__subtitle--about"></p>
-                    <div class="about-me__body">
-                        <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                        <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    </div> 
-                    <img src="img/joselamarao.png" alt="IMAGE">  
+            <section class="section" id="about" >
+                <div class="about-me" >
+                    <div class="wrap_about-me">
+                        <h2 class="section__title section__title--about">About me</h2>
+                        <p class="section__subtitle section__subtitle--about">Currently Searching For First Full Time Job</p>
+                        <div class="about-me__body">
+                            <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        </div>
+                    </div>
+                    <div class="wrap_about-me__img"> 
+                        <img class="about-me__img" src="img/joselamarao_bw.png" alt="IMAGE">  
+                    </div>
                 </div>
             </section>
 
-            <section class="section">
-                <div class="works" id="work">
+            <section class="section" id="work">
+                <div class="works" >
                     <div>
                     <h2 class="section__title section__title--portfolio">Portfolio</21>
                     <p class="section__subtitle section__subtitle--work">Some of my projects</p>
@@ -73,37 +85,84 @@
                         <a href="#" class="portfolio__item" >
                             <img src="img/2keypasswords.png" alt="" class="portfolio__img" >
                         </a>
-
                         <a href="#" class="portfolio__item">
                             <img src="img/hojabola.png" alt="" class="portfolio__img">
                         </a>
-
                         <a href="#" class="portfolio__item">
                             <img src="img/portfolio_img3.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="#" class="portfolio__item">
+                            <img src="img/weather_app.jpg" alt="" class="portfolio__img">
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
-                <div class="contact"></div>
+            <section class="section" id="contacts">
+                <div class="contact" >
+                    <div class="bg-contact100">
+                        <div class="container-contact100">
+                            <div class="wrap-contact100">
+                                <div class="contact100-pic js-tilt" data-tilt>
+                                    <img src="img/msg.png" alt="IMG">
+                                </div>
+                
+                                <form class="contact100-form validate-form">
+                                    <span class="contact100-form-title">
+                                        Get In Touch
+                                    </span>
+                
+                                    <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                                        <input class="input100" type="text" name="name" placeholder="Name">
+                                        <span class="focus-input100"></span>
+                                        <span class="symbol-input100">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                
+                                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                        <input class="input100" type="text" name="email" placeholder="Email">
+                                        <span class="focus-input100"></span>
+                                        <span class="symbol-input100">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                
+                                    <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                                        <textarea class="input100" name="message" placeholder="Message"></textarea>
+                                        <span class="focus-input100"></span>
+                                    </div>
+                
+                                    <div class="container-contact100-form-btn">
+                                        <button class="contact100-form-btn">
+                                            Send
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
 
         <div class="footer">
-            <a href="mailto:josee.nunoo@gmail.com" class="footer__link">josee.nunoo@gmail.com</a>
+            <a href="mailto:josee.nunoo@gmail.com" class="footer__link">lamaraodeveloper@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://github.com/joselamar"><i class="fab fa-github"></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/joselamarao"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
-
-        <script type="text/javascript" src="js/fullpage.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/contactform.js"></script>
         <script type="text/javascript">
             new fullpage('#fullpage', {
 	            //options here
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+                menu : '#menu',
                 autoScrolling: true,
                 scrollHorizontally: true,
                 responsiveWidth: '600px',

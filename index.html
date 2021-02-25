@@ -42,7 +42,7 @@
                     <div class="intro__title">
                         <h1 class="section__title section__title--intro">Hi, I am <strong>José Lamarão</strong></h1>
                         <p class="section__subtitle section__subtitle--intro">Mobile Software Developer</p>
-                        <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <p class="intro__txt">Welcome to my web portfolio! In here you can get to know a little more about me. Furthermore, I display some of my works and a link to their respective source codes in my GitHub. I'm passionate about a lot of things, however developing and designing better mobile applications is what I want to pursue in my life. I consider myself a hardworking, talented developer with superior problem-solving and critical thinking skills. Skilled in tackling problems in unique ways to develop innovative solutions. Feel free to contact me if you have any questions! </p>
                        <div class="button__class">
                             <a href="#fourthPage"><button class="button__intro">Contact Me</button></a>
                             <a href="Jose_Lamarao_CV_compressed.pdf"><button class="button__intro">Curriculum Vitae</button></a>
@@ -65,12 +65,12 @@
                         <h2 class="section__title section__title--about">About me</h2>
                         <p class="section__subtitle section__subtitle--about">Currently Searching For First Full Time Job</p>
                         <div class="about-me__body">
-                            <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                            <p class="intro__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <p class="intro__txt">At the moment I'm finishing my Master's Degree in Computer Scinece at Universidade da Beira Interior by mixing Artificial Inteligence with Mobile Development in a way to create a mobile application capable of detecting fruits in orchards. Nevertheless, as I'm always looking for other challenges it is now time to search for my first full time job.</p>
+                            <p class="intro__txt">It was during my student live that I've made my first contact with Mobile Development, and since then it is a passion of mine. In fact, my final project to obtain the Bachelor's Degree in Computer Science was the development of a software system composed by a backend and a mobile application that shows informations about the fixtures, the standings and the stadiums from the portuguese Primeira Liga teams. Furthermore, I was invited to develop a similar software system that will serve as a virtual complement to the visits at a museum called "Centro de Energia Viva de Montanha" in Manteigas.</p>
                         </div>
                     </div>
                     <div class="wrap_about-me__img"> 
-                        <img class="about-me__img" src="img/joselamarao_bw.png" alt="IMAGE">  
+                        <img class="about-me__img" src="img/joselamarao_bw.jpg" alt="IMAGE">  
                     </div>
                 </div>
             </section>
@@ -82,19 +82,36 @@
                     <p class="section__subtitle section__subtitle--work">Some of my projects</p>
                 </div>
                     <div class="portfolio">
-                        <a href="#" class="portfolio__item" >
-                            <img src="img/2keypasswords.png" alt="" class="portfolio__img" >
-                        </a>
-                        <a href="#" class="portfolio__item">
-                            <img src="img/hojabola.png" alt="" class="portfolio__img">
-                        </a>
-                        <a href="#" class="portfolio__item">
-                            <img src="img/portfolio_img3.jpg" alt="" class="portfolio__img">
-                        </a>
-                        <a href="#" class="portfolio__item">
-                            <img src="img/weather_app.jpg" alt="" class="portfolio__img">
-                        </a>
+                        <div class="container_2keypass">
+                            <img src="img/2keypasswords.jpg" alt="Avatar" class="image">
+                            <div class="overlay_2keypass">
+                                <p class="keypass_text"> 2KeyPasswords </p>
+                              <a href="https://github.com/joselamar/2KeypPasswords" class="icon_2keypass"> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="container_hojabola">
+                            <img src="img/hojabola.jpg" alt="Avatar" class="image">
+                            <div class="overlay_hojabola">
+                                <p class="hojabola_text"> Hojabola </p>
+                              <a href="https://github.com/joselamar/Hojabola" class="icon_hojabola"> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="container_CEVM">
+                            <img src="img/cevm.jpg" alt="Avatar" class="image">
+                            <div class="overlay_CEVM">
+                                <p class="CEVM_text">Available Soon</p>
+                              <a href="" class="icon_CEVM"><i class="fab fa-google-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="container_weatherapp">
+                            <img src="img/weather_app.jpg" alt="Avatar" class="image">
+                            <div class="overlay_weatherapp">
+                                <p class="weatherapp_text"> Weather App </p>
+                              <a href="https://github.com/joselamar/Weather_App" class="icon_weatherapp"> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -107,7 +124,7 @@
                                     <img src="img/msg.png" alt="IMG">
                                 </div>
                 
-                                <form class="contact100-form validate-form">
+                                <form class="contact100-form validate-form" action="contactform.php" method="POST">
                                     <span class="contact100-form-title">
                                         Get In Touch
                                     </span>
@@ -134,9 +151,7 @@
                                     </div>
                 
                                     <div class="container-contact100-form-btn">
-                                        <button class="contact100-form-btn">
-                                            Send
-                                        </button>
+                                        <button class="contact100-form-btn" type="submit" name="submit">Send</button>
                                     </div>
                                 </form>
                             </div>
@@ -148,7 +163,7 @@
         </div>
 
         <div class="footer">
-            <a href="mailto:josee.nunoo@gmail.com" class="footer__link">lamaraodeveloper@gmail.com</a>
+            <a href="mailto:lamaraodeveloper@gmail.com" class="footer__link">lamaraodeveloper@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://github.com/joselamar"><i class="fab fa-github"></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/joselamarao"><i class="fab fa-linkedin"></i></a></li>
